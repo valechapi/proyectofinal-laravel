@@ -25,3 +25,4 @@ Route::get('/faq', 'MiControlador@faq');
 
 Route::get('/productos/listado', 'ProductosControlador@listar');
 Route::get('/productos/agregar', 'ProductosControlador@agregar');
+Route::post('/productos/agregar', 'ProductosControlador@guardar');
