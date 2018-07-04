@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
 
-class movie extends Model
+class Producto extends Model
 {
     protected $guarded = [];
 }
