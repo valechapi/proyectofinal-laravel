@@ -23,6 +23,7 @@ Route::get('/registro', 'MiControlador@registro');
 
 Route::get('/faq', 'MiControlador@faq');
 
-Route::get('/productos/listado', 'Producto@listar');
-Route::get('/productos/agregar', 'Producto@agregar');
-Route::post('/productos/agregar', 'Producto@guardar');
+Route::get('/productos/listado', 'ProductoController@listar');
+Route::get('/productos/agregar', 'ProductoController@agregar');
+Route::post('/productos/agregar', 'ProductoController@guardar');
+Route::get('/categorias/listado', 'CategoriaController@listar');

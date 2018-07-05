@@ -22,12 +22,8 @@
      <input type="text" name="descripcion" value="">
    </div>
    <div class="">
-     <label for="">Lanzamiento</label>
-     <input type="text" name="release_date" value="">
-   </div>
-   <div class="">
      <label for="id_categoria">Categoria</label>
-     <select id="id_categoria class="form-control" name="id_categoria">
+     <select id="id_categoria" class= "form-control" name="id_categoria">
        <option value="">Seleccione</option>
         @foreach ($categorias as $categoria)
           <option value="{{ $categoria->id}}">{{ $categoria->descripcion}}</option>

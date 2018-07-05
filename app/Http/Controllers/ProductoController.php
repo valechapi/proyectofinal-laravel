@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Producto;
+use App\Categoria;
 
-class Producto extends Controller
+class ProductoController extends Controller
 {
     public function listar(){
 
@@ -14,8 +16,9 @@ class Producto extends Controller
 }
 public function agregar(){
 
-  $productos = Producto::orderBy('name', 'ASC')->get();
-  return view ('productos.agregar');
+  $categorias = Categoria::orderBy('descripcion', 'ASC')->get();
+  return view ('productos.agregar')
+    -> with ('categorias', $categorias);
 }
 
 public function guardar (Request $request){
